@@ -38,7 +38,6 @@ Data
 The dataset used for this project is named lending_data. 
 It includes various features related to loan applications, which are used to train the logistic regression model.
 
-...
 Model Evaluation
 The model's performance is evaluated using the following metrics:
 
