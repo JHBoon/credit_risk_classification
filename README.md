@@ -26,7 +26,6 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/JHBoon/credit_risk_prediction.git
-   cd credit_risk_classification
    cd Credit_Risk
    open credit_risk_classification.ipynb
 Install the required packages:
@@ -64,3 +63,6 @@ Chat GPT
 Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss potential improvements.
 
+Author: 
+Jay Boon
+https://www.linkedin.com/in/justboon/
