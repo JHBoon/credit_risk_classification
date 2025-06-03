@@ -1,0 +1,53 @@
+Repo title: credit_risk_classification
+(Module 20)
+
+Analysis
+
+This analysis assesses whether the machine learning prediction model can reliably predict the credit risk of borrowers, based on historical data collected by the lending service.
+
+
+- The dataset contains 77536 loans and records the following information in its columns:
+'loan_size'
+'interest_rate'
+'borrower_income'
+'debt_to_income'
+'num_of_accounts'
+'derogatory_marks'
+'total_debt'
+'loan_status'
+
+The goal is to identify the `loan_status` variable, where `0` indicates a healthy, low-risk loan and `1` indicates a high-risk loan.  
+
+- The distribution of the target variable was as follows:
+  - Healthy loans (0): *majority class*
+  - High-risk loans (1): *minority class*
+- The stages of the machine learning process included:
+  - Load the data and explore the dataset.
+  - Separate data into labels and features (`X` and `y`)
+  - Splitting data to create training and testing sets.
+  - Model and train selection with `LogisticRegression`
+  - Run the prediction model on the test set
+  - Evaluate the quality of the outcome by creating the confusion matrix and assessing the classification report
+
+## Results
+
+* ML Model 1: Logistic Regression
+    
+	Accuracy: 0.99
+    	Precision:
+        * Class 0 (Healthy Loans): 1.00
+        * Class 1 (High-Risk Loans): 0.84
+
+    	Recall:
+        - Class 0: 0.99
+        - Class 1: 0.94
+
+## Conclusion
+
+The logistic regression model is performing exceptionally well. For the healthy loans (class 0), the model achieves a recall rate of approximately 99.9%, indicating that it effectively identifies nearly all healthy loans. The F1 score of 1 suggests that the model has achieved an optimal balance between precision and recall for this class.
+
+On the other hand, the performance for high-risk loans (Class 1) is slightly lower, with the model correctly predicting 85% of these loans. This means that 15% of the loans were misclassified, which could be disappointing for lenders. 
+
+However, the model successfully identified 91% of all high-risk loans in the dataset, demonstrating strong performance.
+
+Overall, while there is room for improvement in classifying high-risk loans, the model's predictions for healthy loans are highly reliable, making it a valuable tool for lenders.
